@@ -7,9 +7,11 @@
 
         const appName = 'c:EventShop_LeadRegistrationApp';
         const componentName = 'c:eventShop_leadRegistrationManager';
-        const lightningEndpoint = 'https://borisglogerconsulting--partsb.sandbox.my.salesforce-sites.com/events?language=de';
+        const lightningEndpoint = 'https://borisglogerconsulting--partsb.sandbox.my.salesforce-sites.com/events';
         const targetElement = document.querySelector("[data-lightning-out]");
-        const componentAttributes = {};
+        const componentAttributes = {
+            language: "de"
+        };
 
         $Lightning.use(
             appName,
